@@ -1,35 +1,5 @@
-.header{
+:root {
   background-color: lightblue;
-  padding: 0.5em;
+  font-size: 62.5%; /* makes the default font size 10 pixels */
 }
 
-#highscores {
-  text-align: left;
-  border-style: solid;
-  border-width: 1px;  
-  border-color: lightcoral;
-}
-
-#timer {
-  text-align: right;
-  border-style: solid;
-  border-width: 1px;
-  border-color: lightgreen;
-}
-
-#question {
-  margin-top: 15%;
-  padding: 1em;
-  border-style: solid;
-  border-width: 1px;
-  border-color: lightskyblue;
-  font-weight: 650;
-}
-
-#multipleChoiceAnswers {
-  margin-top: 2em;
-  padding: 1em;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-}
