@@ -12,6 +12,7 @@
   color: rgb(69, 69, 69);
 }
 
+/* header restyling */
 h1,
 h2,
 h3,
@@ -50,6 +51,7 @@ h3 {
   align-items: center;
   max-width: 80rem;
   margin: 0 auto; 
+  padding: 2rem;
 }
 
 .container > * {
@@ -93,7 +95,7 @@ h3 {
 
 .button:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(128, 0, 128, 0.3);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(128, 0, 128, 0.3); /* i think this looks nice */
 }
 
 .button[disabled]:hover {
@@ -117,13 +119,16 @@ h3 {
   box-shadow: 0 0.4rem 1.4rem 0 rgba(128, 0, 128, 0.3);
 }
 
+/* The number infront of the choices */
 .choice-prefix {
   padding: 1.5rem 2.5rem;
   background-color: rebeccapurple;
   color: white;
 }
 
+/* The different choices the user will pick from will take up their entire box area */
 .choice-text{
   padding: 1.5rem;
+  width: 100%;
 }
 

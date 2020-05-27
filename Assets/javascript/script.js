@@ -2,11 +2,13 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+// Array of questions for the user to answer
+// Greek mythology themed! 
 let questions = [
   {
     question: "According to Greek mythology who was the first woman on earth?",
@@ -59,9 +61,10 @@ let questions = [
 
 ];
 
-const correctBonus = 1;
-const maxQuestions = 5;
+const correctBonus = 1; // When the user answers a question correct, they get a point
+const maxQuestions = 5; // How many questions the user will have to answer per quiz
 
+// Starting a new game, setting question counter and score back to zero. 
 startGame = () => {
   questionCounter = 0;
   score = 0;
@@ -69,11 +72,39 @@ startGame = () => {
   getNewQuestion();
 }
 
+// Function to pull questions from the array of questions
 getNewQuestion = () => {
-  questionCounter++;
-  const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+  // If we run out of questions to pull from the available question array, then the game ends
+  if(availableQuestions.length === 0 || questionCounter >= maxQuestions){
+    //go to end page
+    return window.location.assign("./end.html");
+  }
+
+  questionCounter++; //Adds to the amount of questions that have been asked
+  const questionIndex = Math.floor(Math.random() * availableQuestions.length); //Picks a random number to use to pick a random available question
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
-}
+
+    choices.forEach( choice => {
+      const number = choice.dataset["number"];
+      choice.innerText = currentQuestion["choice" + number];
+    });
+    availableQuestions.splice(questionIndex, 1);
+
+    acceptingAnswers = true;
+};
+
+choices.forEach(choice => {
+  choice.addEventListener("click", e => {
+    if(!acceptingAnswers) return; //If the user tries to pick a question before page loads
+
+    acceptingAnswers = false; 
+
+    const selectedChoice = e.target;
+    const selectedAnswer = selectedChoice.dataset["number"];
+
+    getNewQuestion();
+  });
+});
 
 startGame();
