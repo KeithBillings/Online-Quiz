@@ -111,6 +111,7 @@ h3 {
   width: 100%;
   font-size: 1.8rem;
   border: 0.1rem solid rebeccapurple;
+  background-color: whitesmoke;
 }
 
 .choice-container:hover {
@@ -138,4 +139,16 @@ h3 {
 
 .incorrect {
   background-color: lightcoral;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
 }

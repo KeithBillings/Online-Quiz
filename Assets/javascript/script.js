@@ -1,5 +1,7 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
+const questionCounterText = document.getElementById("questionCounterText");
+const scoreText = document.getElementById('scoreText');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -81,6 +83,7 @@ getNewQuestion = () => {
   }
 
   questionCounter++; //Adds to the amount of questions that have been asked
+  questionCounterText.innerText = questionCounter + " / " + maxQuestions; // Updates how far you are through the quiz as you go
   const questionIndex = Math.floor(Math.random() * availableQuestions.length); //Picks a random number to use to pick a random available question
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -103,17 +106,30 @@ choices.forEach(choice => {
     const selectedChoice = e.target;
     const selectedAnswer = parseInt(selectedChoice.dataset["number"]);
 
+    // Determines if selected answer is correct or not
     let classToApply = 'incorrect';
       if (selectedAnswer === currentQuestion.answer){
         classToApply = 'correct';
       };
 
+      // Add points the score value if question is answered correctly
+      if(classToApply === "correct"){
+        incrementScore(correctBonus);
+      }
+
+    // Will light up selected answer with either green or red depending on if correct or not
     selectedChoice.parentElement.classList.add(classToApply);
     setTimeout( () => {
       selectedChoice.parentElement.classList.remove(classToApply);
       getNewQuestion();
-    }, 1500);
+    }, 1000);
   });
 });
+
+// Updating the score text 
+incrementScore = number => {
+  score += number;
+  scoreText.innerText = score;
+}
 
 startGame();
