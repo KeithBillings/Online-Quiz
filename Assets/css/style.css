@@ -101,3 +101,29 @@ h3 {
   box-shadow: none;
   transform: none;
 }
+
+/* Game Page Styling */
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rebeccapurple;
+}
+
+.choice-container:hover {
+  transform: translateY(-0.1rem);
+  transition: transform 200ms;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(128, 0, 128, 0.3);
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.choice-text{
+  padding: 1.5rem;
+}
+
