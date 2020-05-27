@@ -132,3 +132,10 @@ h3 {
   width: 100%;
 }
 
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: lightcoral;
+}
