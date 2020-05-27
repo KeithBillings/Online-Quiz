@@ -78,7 +78,9 @@ startGame = () => {
 getNewQuestion = () => {
   // If we run out of questions to pull from the available question array, then the game ends
   if(availableQuestions.length === 0 || questionCounter >= maxQuestions){
-    //go to end page
+    // Saving the user's final score to local storage
+    localStorage.setItem("mostRecentScore", score);
+    // Go to end page
     return window.location.assign("./end.html");
   }
 
