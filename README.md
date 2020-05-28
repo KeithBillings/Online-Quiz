@@ -11,3 +11,13 @@ On this assignment I was tasked to create an online quiz for others to take. Thi
   * Next, I built the css stylesheet to contain the basics of what I would need
   * I made sure to have all elements centered
   * Buttons would have purple text, borders, and shadow
+  * Build and style main testing page
+  * Add test questions based on greek lore to an array
+  * Write a function to pull from the array and dynamically update the html list
+  * Write a function to determine if what the user clicks on is correct or not
+  * Add user selection to total score if correct
+  * Add score to local storage 
+  * Build and style end page
+  * Have highscore represented by most recent player score
+  * Add functionality to highscores list
+  * Debug
