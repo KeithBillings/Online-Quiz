@@ -34,6 +34,7 @@ https://keithbillings.github.io/Online-Quiz/
   * Debug
   * Make incorrect answers subtract 10 seconds from the timer
   * Make quiz end at 0 or less seconds
+  * Restyle and add screenshots
 
 ## Author
 
