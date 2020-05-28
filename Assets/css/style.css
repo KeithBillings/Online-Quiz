@@ -118,10 +118,7 @@ h4 {
 }
 
 /* Game Page Styling */
-#game{
-  padding: 3rem 3rem 3rem 3rem;
-  background-color: rgba(245, 245, 245, 0.26);
-}
+
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
