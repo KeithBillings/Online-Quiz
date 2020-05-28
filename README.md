@@ -8,7 +8,7 @@ On this assignment I was tasked to create an online quiz for others to take. Thi
 
 https://keithbillings.github.io/Online-Quiz/
 
-## Screenshot
+## Screenshots
 
 ![Screenshot1](/Assets/screenshots/Screenshot1.png)
 ![Screenshot2](/Assets/screenshots/Screenshot2.png)
