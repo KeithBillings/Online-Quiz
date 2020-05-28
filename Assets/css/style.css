@@ -1,5 +1,5 @@
 :root {
-  background-color: lightblue;
+  background: url(../images/background.jpg);
   font-size: 62.5%; /* Makes the default font size 10 pixels */
 }
 
@@ -9,7 +9,8 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  color: rgb(69, 69, 69);
+  color: whitesmoke;
+  text-shadow: -0.2rem 0.2rem 0.2rem rebeccapurple;
 }
 
 /* header restyling */
@@ -87,11 +88,11 @@ h3 {
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.2rem solid purple;
+  border: 0.2rem solid rebeccapurple;
   margin-bottom: 1rem;
   text-decoration: none; /* dont want underline from anchor tags */
-  color: purple;
-  background-color: whitesmoke;
+  color: whitesmoke;
+  background-color: rebeccapurple;
 }
 
 .button:hover {
@@ -106,6 +107,10 @@ h3 {
 }
 
 /* Game Page Styling */
+#game{
+  padding: 3rem 3rem 3rem 3rem;
+  background-color: rgba(245, 245, 245, 0.26);
+}
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
@@ -125,13 +130,15 @@ h3 {
 .choice-prefix {
   padding: 1.5rem 2.5rem;
   background-color: rebeccapurple;
-  color: white;
+  color: whitesmoke;
 }
 
 /* The different choices the user will pick from will take up their entire box area */
 .choice-text{
   padding: 1.5rem;
   width: 100%;
+  color: rebeccapurple;
+  text-shadow: none;
 }
 
 .correct {
@@ -168,6 +175,7 @@ input {
   padding: 1.5rem;
   font-size: 1.8rem;
   border: none;
+  text-shadow: none;
 }
 
 /* highscores style */
