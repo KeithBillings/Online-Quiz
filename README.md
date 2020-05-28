@@ -10,7 +10,8 @@ https://keithbillings.github.io/Online-Quiz/
 
 ## Screenshot
 
-
+![Screenshot1](/Assets/screenshots.Screenshot1.png)
+![Screenshot2](/Assets/screenshots.Screenshot2.png)
 
 ## What I did
 
