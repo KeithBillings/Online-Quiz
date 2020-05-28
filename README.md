@@ -4,6 +4,14 @@
 
 On this assignment I was tasked to create an online quiz for others to take. This will have a series of timed multiple choice questions and a highscores list.  
 
+## Deployment
+
+https://keithbillings.github.io/Online-Quiz/
+
+## Screenshot
+
+
+
 ## What I did
 
   * First I created the default folders and HTML files I will need to build the project
@@ -21,3 +29,7 @@ On this assignment I was tasked to create an online quiz for others to take. Thi
   * Have highscore represented by most recent player score
   * Add functionality to highscores list
   * Debug
+
+## Author
+
+Keith Billings
