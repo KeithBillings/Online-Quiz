@@ -62,7 +62,22 @@ let questions = [
     choice4: "A Leviathan",
     answer: 3
   },
-
+  {
+    question: "How many gods lived on Mount Olympus?",
+    choice1: "1",
+    choice2: "12",
+    choice3: "13",
+    choice4: "14",
+    answer: 2
+  },
+  {
+    question: "What is Poseidon's Roman name?",
+    choice1: "Oceanus",
+    choice2: "Pluto",
+    choice3: "Aegaeon",
+    choice4: "Neptune",
+    answer: 4
+  },
 ];
 
 const correctBonus = 1; // When the user answers a question correct, they get a point
