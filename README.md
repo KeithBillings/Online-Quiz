@@ -30,6 +30,10 @@ https://keithbillings.github.io/Online-Quiz/
   * Have highscore represented by most recent player score
   * Add functionality to highscores list
   * Debug
+  * Add 60 second timer and functionality
+  * Debug
+  * Make incorrect answers subtract 10 seconds from the timer
+  * Make quiz end at 0 or less seconds
 
 ## Author
 
