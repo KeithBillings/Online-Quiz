@@ -9,25 +9,40 @@
 <body>
   <div class="container">
     <div id="game" class="justify-center flex-column">
+      <!-- The HUD that will show which question the user is on, the timer, and their score -->
       <div id="hud">
-          <div id="hud-item">
-            <p class="hud-prefix">
-              Question
-            </p>
-            <h1 class="text-center" id="questionCounterText">
-              
-            </h1>
-          </div>
-          <div id="hud-item">
-            <p class="hud-prefix">
-              Score
-            </p>
-            <h1 class="text-center" id="scoreText">
-              0
-            </h1>
-          </div>
+        <!-- Which question the user is on -->
+        <div id="hud-item">
+          <p class="hud-prefix">
+            Question
+          </p>
+          <h1 class="text-center" id="questionCounterText">
+            <!-- This will be dynamically updated here: 1/5 through 5/5 -->
+          </h1>
+        </div>
+        <!-- Timer -->
+        <div class="hud-item">
+          <p class="hud-prefix">
+            Time Left
+          </p>
+          <h1 class="text-center" id="timerText">
+            60
+          </h1>
+        </div>
+        <!-- User's current score -->
+        <div id="hud-item">
+          <p class="hud-prefix">
+            Score
+          </p>
+          <h1 class="text-center" id="scoreText">
+            0 <!-- this will be dynamically updated as the user answer questions correctly: score 1 through 5 -->
+          </h1>
+        </div>
       </div>
-      <h2 id="question">Question goes here?</h2>
+      <h2 id="question">
+      <!-- Question will be asked here -->        
+      </h2>
+      <!-- Answers area -->
       <div class="choice-container">
         <p class="choice-prefix">A</p>
         <p class="choice-text" data-number="1">Choice 1</p>

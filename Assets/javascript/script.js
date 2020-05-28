@@ -2,12 +2,14 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById("questionCounterText");
 const scoreText = document.getElementById('scoreText');
+const timerText = document.getElementById('timerText');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let timer = 60;
 
 // Array of questions for the user to answer
 // Greek mythology themed! 
@@ -108,16 +110,20 @@ choices.forEach(choice => {
     const selectedChoice = e.target;
     const selectedAnswer = parseInt(selectedChoice.dataset["number"]);
 
-    // Determines if selected answer is correct or not
     let classToApply = 'incorrect';
-      if (selectedAnswer === currentQuestion.answer){
-        classToApply = 'correct';
-      };
 
-      // Add points the score value if question is answered correctly
-      if(classToApply === "correct"){
-        incrementScore(correctBonus);
-      }
+    // Determines if selected answer is correct   
+    if (selectedAnswer === currentQuestion.answer){
+      classToApply = 'correct';
+    };
+    // Add points the score value if question is answered correctly
+    if(classToApply === 'correct'){
+      incrementScore(correctBonus);
+    };
+    // Take off time if answered incorrectly
+    if(classToApply === 'incorrect'){
+      timer = timer-10;
+    };
 
     // Will light up selected answer with either green or red depending on if correct or not
     selectedChoice.parentElement.classList.add(classToApply);
@@ -133,5 +139,19 @@ incrementScore = number => {
   score += number;
   scoreText.innerText = score;
 }
+
+// Timer
+if (timer > -1){
+setInterval( () => {
+  if (timer <= 0){
+    // Saving the user's final score to local storage
+    localStorage.setItem("mostRecentScore", score);
+    // Go to end page
+    return window.location.assign("./end.html");
+  };
+  timer--
+  timerText.innerText = timer;
+}, 1000);}
+
 
 startGame();
