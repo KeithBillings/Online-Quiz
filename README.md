@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-On this assignment I was tasked to create an online quiz for others to take. This will have a series of timed multiple choice questions and a highscores list.  
+On this assignment I was tasked to create an online quiz for others to take. This will have a series of timed multiple choice questions and a highscores list. The quiz is timed. The user gets 60 seconds to start, and will lose 10 seconds upon an incorrect question.
 
 ## Deployment
 
