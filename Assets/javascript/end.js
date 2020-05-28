@@ -6,7 +6,7 @@ const mostRecentScore = localStorage.getItem("mostRecentScore");
 const finalScore = document.getElementById("finalScore");
 
 // Get an array of highscores from local storage or put in an empty array if running for the first time
-const highScores = JSON.parse(localStorage.getItem("highscores")) || [];
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 const maxHighScores = 5;
 console.log(highScores);
