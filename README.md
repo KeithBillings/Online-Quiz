@@ -12,6 +12,7 @@ https://keithbillings.github.io/Online-Quiz/
 
 ![Screenshot1](/Assets/images/Screenshot1.png)
 ![Screenshot2](/Assets/images/Screenshot2.png)
+![Screenshot2](/Assets/images/Screenshot3.png)
 
 ## What I did
 
