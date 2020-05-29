@@ -1,6 +1,7 @@
 :root {
   background: url(../images/background.jpg);
   font-size: 62.5%; /* Makes the default font size 10 pixels */
+  text-align: center;
 }
 
 /* Selecting all elements, making these the new defaults */
@@ -78,10 +79,6 @@ h4 {
   justify-content: center;
 }
 
-.text-center {
-  text-align: center;
-}
-
 .hidden {
   display: none;
 }
@@ -92,7 +89,6 @@ h4 {
   font-size: 2rem;
   padding: 1rem 0;
   width: 20rem;
-  text-align: center;
   border: 0.2rem solid rebeccapurple;
   margin-bottom: 1rem;
   text-decoration: none; /* dont want underline from anchor tags */
@@ -112,13 +108,8 @@ h4 {
 }
 
 /* Title Page Styling */
-#home{
-  text-align: center;
-}
-
 #rules{
   margin-top: 2rem;
-  text-align: center;
 }
 
 /* Game Page Styling */
@@ -151,6 +142,7 @@ h4 {
   width: 100%;
   color: rebeccapurple;
   text-shadow: none;
+  text-align: left;
 }
 
 .correct {
@@ -169,7 +161,6 @@ h4 {
 }
 
 .hud-prefix {
-  text-align: center;
   font-size: 2rem;
 }
 
